@@ -1,15 +1,9 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 .theme_light.page {
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
   background-position: center;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
-
 
 .page.theme_light {
   --text-color: rgb(53, 52, 48);
@@ -27,11 +21,11 @@
     --accent-color: #FF8DCB;
     --text-shadow: #FF0070;
     --title-footer-text: #FFC2E6;
-    background-image: url(/images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
   }
 
   .theme_auto .page {
-    background-image: url(/images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
   }
 
   .theme_auto.page .title-cover {
@@ -237,7 +231,7 @@
 }
 
 .theme_light .page {
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
 }
 
 .theme_light .title-cover {
@@ -342,8 +336,3 @@
   overflow: hidden;
   white-space: nowrap; 
 }
-
-
-
-
-

@@ -1,9 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
-  background-image: url(/images/cover-image-dark.png);
-  background-position: center;
+  background-image: url(../images/cover-image-dark.png);
+  background-position: var(--bck-position);
   background-attachment: fixed;
   background-size: 100% 100%;
+  background-color: #000028;
+  height: 100vh;
+  min-height: 668px;
 }
 
 .border {
@@ -26,7 +29,7 @@
 }
 
 .border::after {
-  top: 723px;
+  bottom: -113px;
   left: 20px;
   height: 25px;
   width: 25px;
@@ -35,9 +38,8 @@
 }
 
 
-.header {
+.decorated-zone {
   display: flex;
-  align-items: center;
   justify-content: center; 
   position: relative;
   padding-top: 20px;
@@ -103,8 +105,6 @@
   text-transform: uppercase;
 }
 
-
-
 .header__menu-text::before {
   content: '';
   position: absolute;
@@ -145,7 +145,7 @@
 
 .section-focus-difficulty {
   display: flex;
-  margin: 60px 20px 0 10px;
+  margin: 160px 20px 0 10px;
 }
 
 .content-block {
@@ -179,19 +179,25 @@
   margin-bottom: 20px;
 }
 
+.section__text-dopamine {
+  color: var(--text-color);
+  font-family: "IBM Plex mono", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
 .link__in-text {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
   cursor: pointer;
 }
 
 .link__in-text:hover {
-  text-shadow: 4px 4px 0 var(--accent-color);
   border-bottom: 1px solid var(--text-color);
 }
 
-.link__in-text:focus-visible {
-  text-shadow: 4px 4px 0 var(--accent-color);
-  border: 1px solid var(--text-color);
+.link__in-text:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .content-block-main {
@@ -206,16 +212,18 @@
 
 .section-title-container {
   width: 260px;
+  margin-top: 20px;
 }
 
 .section_info {
   margin-top: 20px;
   display: flex;
-  gap: 20px;
+  gap: 19px;
+  flex-wrap: wrap;
 }
 
 .section-card {
-  width: 33%;
+  width: 32%;
 }
 
 .section-focus-improvement {
@@ -257,7 +265,7 @@
 .section-gallery{
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 47px;
 }
 
 .section__title-image {
@@ -310,10 +318,11 @@
   align-items: center;
   height: 100vh;
   position: relative;
+  min-height: 635px;
 }
 
 .footer-title {
-  padding-top: 100px;
+  padding-top: 130px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
@@ -324,7 +333,7 @@
     margin-top: 176px;
   }
 
-  .header {
+  .decorated-zone {
     display: flex;
     justify-content: right;
     margin-right: 26px;
@@ -355,6 +364,10 @@
     padding-bottom: 23px;
   }
 
+  .section-focus-difficulty {
+    margin-top: 416px;
+  }
+
   .section-one {
     margin: 60px 20px 0px 7px;
   }
@@ -382,11 +395,11 @@
   }
 
   .content-block--main {
-    width: 46%;
+    width: 345%;
   }
 
   .section__title-main {
-    width: 227px;
+    max-width: 227px;
   }
 
   .gallery {
@@ -436,7 +449,7 @@
     left: 10px;
   }
 
-  .header {
+  .decorated-zone {
     margin-right: 17px;
     padding-top: 72px;
   }
@@ -461,17 +474,19 @@
 
   .section-focus-difficulty {
     flex-direction: column;
+    margin-top: 35px;
   }
 
   .content-block {
     margin-top: 5px;
+    margin-left: 0px;
   }
 
   .section__title-main {
-    width: 185%;
+    min-width: 181%;
   }
   .content-block-main {
-    margin-top: 20px;
+    margin-top: 19px;
     width: 345px;
   }
 
@@ -483,9 +498,13 @@
     width: 346px;
   }
 
+  .section__text-dopamine {
+    width: 103%;
+  }
+
   .section-attention-reduction {
     margin-left: 10px;
-    padding-top: 30px;
+    padding-top: 31px;
   }
 
   .section-title-container {
@@ -494,7 +513,7 @@
 
   .section-focus-improvement {
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 51px;
     margin-left: 10px;
   }
 
@@ -562,7 +581,7 @@
 
   .footer {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    height: 600px;
+    min-height: 600px;
   }
 
 }

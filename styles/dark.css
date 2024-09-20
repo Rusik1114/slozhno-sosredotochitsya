@@ -4,23 +4,12 @@
   переключая тему
 */
 
-:root {
+:root.theme_dark {
   --accent-color: rgb(255, 0, 112);
   --border-color: rgb(255, 0, 112, 0.5);
   --text-color: rgb(241, 178, 206);
   --title-text: #000028;
   --main-text: rgb(219, 0, 255);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: rgb(255, 0, 112);
-    --border-color: rgb(255, 0, 112, 0.5);
-    --text-color: rgb(241, 178, 206);
-    --title-text: #000028;
-    --main-text: rgb(219, 0, 255);
-  }
-
 }
 
 
