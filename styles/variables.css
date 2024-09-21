@@ -2,13 +2,15 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root {
+/* :root {
   --accent-color: rgb(255, 0, 112);
+  --border-color: rgba(255, 0, 112, 0.5);
   --text-color: rgb(241, 178, 206);
+  --text-shadow: rgb(219, 0, 255);
   --title-text: #000028;
-  --main-text: rgb(219, 0, 255);
+  --background-color: #000028;
   --bck-position: center;
-}
+} */
 
 
 
