@@ -8,6 +8,9 @@
   --text-cover: #353430;
   --text-main: #353430;
   --btn-color-opacity: rgb(53, 52, 48, 0.5); 
+  --width-hidden: 1px;
+  --height-hidden: 1px;
+  --react-hidden: rect(0, 0, 0, 0);
 }
 
 
@@ -21,32 +24,12 @@
     --text-cover: #353430;
     --text-main: #353430;
     --btn-color-opacity: rgb(53, 52, 48, 0.5); 
+    --element-display: none;
+    --width-hidden: 1px;
+    --height-hidden: 1px;
+    --react-hidden: rect(0, 0, 0, 0);
   }
 
-  .theme_light .hidden-element,
-  .theme_auto .hidden-element {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    white-space: nowrap;
-   }
 }
 
-
-.theme_light .hidden-element {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap;
- }
 

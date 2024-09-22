@@ -8,6 +8,10 @@
   --text-cover: #000028;
   --bg-color-text: #FF0070;
   --text-main: #F1B2CE;
+  --element-display: block;
+  --width-hidden: 1;
+  --height-hidden: 1;
+  --react-hidden: rect(1, 0, 0, 0);
  }
 
 
