@@ -195,8 +195,8 @@
 }
 
 .link__in-text:focus {
-  outline: none; /* Убираем стандартную обводку */
-  border: 1px solid var(--text-main); /* Добавляем обводку при фокусе */
+  outline: none; 
+  border: 1px solid var(--text-main); 
 }
 
 .content-block-main {
