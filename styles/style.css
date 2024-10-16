@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 header {
   height: 100vh;
   min-height: 668px;
 }
+=======
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
 
 .page {
   background-image: var(--bg-image);
@@ -144,7 +150,7 @@ header {
 
 .content-section {
   display: flex;
-  margin: 160px 20px 0 10px;
+  margin: 58px 20px 0 10px;
 }
 
 .content-block {
@@ -206,7 +212,7 @@ header {
 }
 
 .section-attention-reduction {
-  padding-top: 60px;
+  padding-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -378,7 +384,11 @@ header {
   }
 
   .content-section {
+<<<<<<< HEAD
     margin-top: 417px;
+=======
+    margin-top: 416px;
+>>>>>>> 18855495ad27328d7dc22e27d84bd6fcd818eeea
   }
 
   .section-one {
