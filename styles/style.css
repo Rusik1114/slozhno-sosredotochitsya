@@ -1,23 +1,14 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
-:root {
-  --bg-image: url(../images/cover-image-dark.png);
-  --title-cover: #DB00FF;
-  --accent-color: #FF0070;
-  --btn-color: #FF0070;
-  --text-cover: #000028;
-  --bg-color-text: #FF0070;
-  --text-main: #F1B2CE;
-  --btn-color-opacity: rgb(255, 0, 112, 0.5);
+header {
+  height: 100vh;
+  min-height: 668px;
 }
 
 .page {
   background-image: var(--bg-image);
   background-position: var(--bck-position);
+  background-color: var(--bg-color);
   background-attachment: fixed;
   background-size: 100% 100%;
-  height: 100vh;
-  min-height: 668px;
 }
 
 .border {
@@ -145,13 +136,13 @@
   font-weight: 700;
   line-height: 23.4px;
   background-color: var(--bg-color-text);
-  width: 486px; 
+  max-width: 486px; 
   margin-left: auto; 
   margin-right: 23px;
   margin-bottom: 193px;
 }
 
-.section-focus-difficulty {
+.content-section {
   display: flex;
   margin: 160px 20px 0 10px;
 }
@@ -184,15 +175,15 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
-  margin-bottom: 20px;
 }
 
-.section__text-dopamine {
+.section_text {
   color: var(--text-main);
   font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
+  margin-bottom: 20px;
 }
 
 .link__in-text {
@@ -206,8 +197,8 @@
 }
 
 .link__in-text:focus {
-  outline: none; /* Убираем стандартную обводку */
-  border: 1px solid var(--text-main); /* Добавляем обводку при фокусе */
+  outline: none; 
+  border: 1px solid var(--text-main); 
 }
 
 .content-block-main {
@@ -236,11 +227,15 @@
   width: 32%;
 }
 
+.section_card {
+  width: 32%;
+}
+
 .section-focus-improvement {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 60px;
+  margin-top: 79px;
 }
 
 .content-block--main {
@@ -258,6 +253,20 @@
   margin-bottom: 20px;
 }
 
+.hidden-element {
+  position: absolute;
+  width: var(--width-hidden);
+  height: var(--height-hidden);
+  padding: 0;
+  margin: 0;
+  overflow: inherit;
+  clip: var(--react-hidden);
+  border: 0;
+  white-space: nowrap;
+  display: var(--element-display)
+ }
+
+
 .section-subtitle {
   color: var(--text-cover);
   font-family: "IBM Plex mono", serif;
@@ -269,7 +278,7 @@
 }
 
 .section-gallery{
-  margin: 58px 20px 47px 20px;
+  margin: 80px 20px 47px 20px;
 }
 
 .section__title-image {
@@ -306,7 +315,7 @@
   object-fit: cover;
 }
 
-.sunset, .ice-cream, .tape, .books, .street {
+.gallery-size {
   max-width: 100%; 
   max-height: 100%; 
 }
@@ -362,14 +371,14 @@
 
   .text-cover {
     margin-top: 160px;
-    width: 364px;
+    max-width: 364px;
     margin-left: auto; 
     margin-bottom: 243px;
     padding-bottom: 23px;
   }
 
-  .section-focus-difficulty {
-    margin-top: 416px;
+  .content-section {
+    margin-top: 417px;
   }
 
   .section-one {
@@ -388,6 +397,11 @@
   .section_info {
     margin-top: 19px;
     display: block;
+  }
+
+  .section_card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .section-card {
@@ -436,7 +450,7 @@
     object-fit: cover;
   }
   
-  .sunset, .ice-cream, .tape, .books, .street {
+  .gallery-size {
     max-width: 100%; 
     max-height: 100%; 
   }
@@ -482,7 +496,7 @@
     right: 38px;
   }
 
-  .section-focus-difficulty {
+  .content-section {
     flex-direction: column;
     margin-top: 35px;
   }
@@ -497,7 +511,7 @@
   }
   .content-block-main {
     margin-top: 19px;
-    width: 345px;
+    width: 346px;
   }
 
   .section__title {
@@ -534,6 +548,7 @@
 
   .block-addition {
     margin-bottom: 0;
+    width: 347px;
   }
 
   .section-title--tips {
@@ -545,7 +560,7 @@
   }
 
   .section-gallery{
-    margin-top: 31px;
+    margin-top: 47px;
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 44px;
