@@ -10,7 +10,7 @@ header {
   background-position: var(--bck-position);
   background-color: var(--bg-color);
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .border {
@@ -61,7 +61,7 @@ header {
 
 .header__theme-menu-button {
   color: var(--btn-color);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -96,7 +96,7 @@ header {
 
 .header__menu-text {
   color: var(--accent-color);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -123,7 +123,7 @@ header {
 .title-cover {
   margin-top: 278px;
   color: var(--title-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 82.5%;
@@ -133,7 +133,7 @@ header {
 .text-cover {
   margin-top: 116px;
   color: var(--text-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -155,7 +155,7 @@ header {
 
 .section__title-main {
   color: var(--btn-color);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -163,7 +163,7 @@ header {
 
 .section__title {
   color: var(--text-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -173,7 +173,7 @@ header {
 
 .section__text {
   color: var(--text-main);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -181,7 +181,7 @@ header {
 
 .section_text {
   color: var(--text-main);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -233,7 +233,7 @@ header {
   width: 32%;
 }
 
-.content-section {
+.section {
   display: flex;
   margin-left: 20px;
   margin-right: 20px;
@@ -247,7 +247,7 @@ header {
 
 .section-title--tips {
   color: var(--text-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -271,7 +271,7 @@ header {
 
 .section-subtitle {
   color: var(--text-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
@@ -285,7 +285,7 @@ header {
 
 .section__title-image {
   color: var(--text-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -324,7 +324,7 @@ header {
 
 .footer {
   color: var(--title-cover);
-  font-family: "IBM Plex mono", monospace;
+  font-family: "IBM Plex mono", serif;
   font-weight: 700;
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -337,12 +337,11 @@ header {
 }
 
 .footer-title {
-  padding-top: 130px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .title-cover {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-top: 176px;
@@ -414,7 +413,7 @@ header {
     width: 230px;
   }
 
-  .content-section {
+  .section {
     margin-top: 80px;
   }
 
@@ -459,11 +458,11 @@ header {
 
   .footer-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-top: 57px;
+    padding-top: 20px;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
 
   .border::before {
     top: 7px;
@@ -500,7 +499,7 @@ header {
 
   .content-section {
     flex-direction: column;
-    margin-top: 35px;
+    margin-top: 38px;
   }
 
   .content-block {
@@ -537,7 +536,7 @@ header {
     width: 50%;
   }
 
-  .content-section {
+  .section {
     flex-direction: column;
     margin-top: 51px;
     margin-left: 10px;
@@ -609,6 +608,10 @@ header {
   .footer {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     min-height: 600px;
+  }
+
+  .footer-title {
+    padding-top: 0px;
   }
 }
 
